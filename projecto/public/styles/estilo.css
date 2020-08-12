@@ -1,0 +1,257 @@
+
+#corp{
+    background-color: rgba(255, 145, 0, 0.917);
+
+}
+
+#corp .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#corp .container  header{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+#corp .erro{
+    font-size: 2.5rem;
+    color: rgba(255, 0, 0, 0.828);
+}
+
+#corp .h1princ{
+    margin-top:2rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color:white;
+    padding-left:2rem;
+}
+
+#corp .container  header div{
+    width:100%;
+    background: rgba(255, 255, 255, .82 );
+    box-shadow: 1px -1px 2px  black;
+    padding-top:2rem;
+    padding-bottom:.3rem;
+    position: relative;
+}
+#corp .container  header div .across{
+    font-size:2.5rem;
+    position:absolute;
+    right: 14px;
+    top:14px;
+    text-decoration: none;
+    color:orange;
+  
+}
+
+#corp .container  header div p{
+    margin-top:2rem;
+    font-size: 2rem;
+    padding-left: 3rem;
+    
+}
+#corp .container  header div .sabado{
+  font-size:0;
+  margin:0;
+  padding:0;
+}
+#corp .container  header div h2{
+  
+    padding-left: 3rem;
+    margin-bottom:2rem;
+}
+#corp header div .arrow{
+    color: orange;
+}
+
+#corp .container  header div p span{
+    font-weight: 700;
+}
+#corp .container  header div .feels{
+  margin-left:5rem;
+  font-weight: normal;
+}
+#corp .container  header div .humidity{
+    margin-left:3.5rem;
+    font-weight: normal;
+}
+
+
+#corp .container  header div h1{
+    font-size:4.5rem;
+    margin: 1rem auto;
+    font-family: Archivo;
+    padding-left: 3rem;
+}
+
+#corp .container  header div footer{
+    margin-top: 2rem;
+    width:100%;
+    display:flex;
+    border-top: 1px solid orange;
+    margin-bottom: 2rem;
+}
+
+#corp .container  header div footer p:after{
+    content: "";
+   
+    margin-left: 2rem;
+}
+#corp .container  header div footer p{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 1.2rem;
+}
+#corp .container  header div footer p span{
+    color:orangered;
+}
+
+#corp .container  main {
+ width: 100%;
+ margin-top:1.5rem;
+ margin-bottom: 2rem;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+#corp .container  form{
+    width: 100%;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#corp .container  form input{
+    width: 86%;
+    height: 5rem;
+    border: 0;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    margin-right:0;
+}
+
+#corp .container  form button{
+    border:0;
+    height:5rem;
+    margin-left:0;
+    cursor: pointer;
+    background: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#corp .container #footercont{
+    margin-top: 1.5rem;
+    width: 100%;
+    border-top: 2px solid white;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+#corp .container #footercont h1{
+  font-size:4rem;
+  color: white;
+  margin-bottom:1rem;
+}
+
+#corp .container #footercont p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#corp .container #footercont p small{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#corp .container #footercont p {
+    margin-bottom:2rem;
+}
+
+#corp .container #footercont p .minmax{
+    font-size:0;
+    margin:0;
+    padding:0;
+}
+
+
+@media (min-width:700px){
+    #corp .container{
+        max-width: 40vw;
+    }
+
+
+    html{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #corp .container  header div .sabado{
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-left: 1.5rem;
+    }
+    #corp .container  header div .Terca{
+        
+        padding-left: 2.6rem;
+    }
+    
+    #corp .container  header div footer{
+        margin-top: 2rem;
+        width:90%;
+        margin-left:2rem;
+        display:flex;
+        border-top: 1px solid orange;
+        margin-bottom: 2rem;
+    }
+
+    #corp .container  header div footer p{
+        
+        padding-left: 0.5rem;
+    }
+    
+    #corp .container #footercont div{
+        display:flex;
+       
+        align-items: center;
+        justify-content: space-between;
+
+    } 
+    #corp .container form input{
+        width:100%;
+    }
+
+    #corp .container #footercont p{
+        font-size:16px;
+    }
+
+    #corp .h1princ{
+        font-size: 50px;
+        text-align:center;
+    }
+
+    #corp .container #footercont .cyties-left {
+        margin-top:33.5px;
+    }
+    #corp .container #footercont p .minmax{
+        display:block;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        font-size: smaller;
+    }
+    
+}
+
