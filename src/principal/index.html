@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/terra.jpg" type="image/png">
+    <script src="scripts/java.js" defer></script>
+    <link rel="stylesheet" href="styles/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Weheater</title>
+ 
+</head>
+<body id="corp">
+  <h1 class="h1princ">Previsão do tempo</h1>
+  <div class="container">
+    
+   <header class="cabecalho">
+  {% if error.code=="ENOTFOUND" %}
+     <p class="erro">Erro de rede. Tente novamente</p>
+  {%else%}
+    <div class="wheather">
+      <a href="#" class="across">x</a>
+      <h2>{{resp.name}}, {{resp.location.region}}-{{resp.sys.country}}</h2>
+      <h1>{{resp.main.temp}}&deg;C &nbsp; {{resp.weather[0].description}}</h1>
+       <p> <span class="arrow">&downarrow;</span> <span>{{resp.main.temp_min}}&deg;C</span> <span class="arrow">&uparrow;</span> <span>{{resp.main.temp_max}}&deg;C</span> <span class="feels">Sensação:</span> <span >{{resp.main.feels_like}}&deg;C</span> </p>
+       <p>Vento: <span>{{resp.wind.speed}}Km/h</span> <span class="humidity">Humidade:</span> <span>{{resp.main.humidity}}%</span></p>
+       
+      <footer>
+        <p class="Terca">Terça <br> 
+          <span>18&deg;26&deg;</span>
+        </p>
+       
+        <p>
+        Quarta <br>
+        <span>18&deg;28&deg;</span>  
+       </p>
+
+       <p>
+        Quinta <br>
+      <span>18&deg;28&deg; <span>
+      </p>
+      <p>
+        Sexta<br>
+        <span>18&deg;28&deg; </span>
+      </p>
+      <p class="sabado">
+        Sabado<br>
+        <span>17&deg;28&deg; </span>
+      </p>
+      
+      </footer>
+    </div>
+  {% endif %}
+   </header>
+  
+   <main>
+    <form action="">
+     <input type="text" name="loc" id="loc" placeholder="Insira aqui o nome da cidade"> 
+     <button type="submit">&#128269;</button>
+   </form>
+   </main>
+  
+   <footer id="footercont">
+    <h1>Capitais</h1>
+    <div class="cidades">
+    <p class="cyties"> 
+      <small>Min .Max </small> <br>
+      <br>
+      18*20* &nbsp; Temperatura <br>
+      <br>
+      18*20* &nbsp; Possibilidade de chuva <br>
+      <br>
+      18*20* &nbsp; Humidade <br>
+      <br>
+      18*20* &nbsp; Temperatura <br>
+    </p>
+   
+    <p class="cyties-left">
+    <small class="minmax">Min .Max </small> 
+    
+    18*20* &nbsp;  Rio de janeiro <br>
+    <br>
+    18*20* &nbsp; Sáo paulo <br>
+    <br>
+    18*20* &nbsp; Belo Horizonte <br>
+    <br>
+    18*20* &nbsp;  Brazilia <br>
+    <br>
+    18*20* &nbsp; Belém 
+    </p>
+  </div>
+  </footer>
+ </div>
+    
+</body>
+</html>
