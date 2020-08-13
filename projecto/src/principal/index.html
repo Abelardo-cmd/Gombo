@@ -20,7 +20,10 @@
   {% if error.code=="ENOTFOUND" %}
      <p class="erro">Erro de rede. Tente novamente</p>
   {%else%}
-    <div class="wheather">
+    {% if error.response.status==404 %}
+      <p class="erro">Região ou localidade não encontrada. Tente novamente</p>
+    {%else%}
+      <div class="wheather">
       <a href="#" class="across">x</a>
       <h2>{{resp.name}}, {{resp.location.region}}-{{resp.sys.country}}</h2>
       <h1>{{resp.main.temp}}&deg;C &nbsp; {{resp.weather[0].description}}</h1>
@@ -51,7 +54,8 @@
       </p>
       
       </footer>
-    </div>
+      </div>
+    {% endif %}
   {% endif %}
    </header>
   

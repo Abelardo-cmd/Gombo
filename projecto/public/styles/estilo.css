@@ -185,7 +185,7 @@
 }
 
 
-@media (min-width:700px){
+@media (min-width:1200px){
     #corp .container{
         max-width: 40vw;
     }
